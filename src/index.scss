@@ -39,3 +39,9 @@ body {
   background-color: $main-bg-color;
   box-shadow: 10px 10px 15px #cbced1, -10px -10px 15px #ffffff;
 }
+
+@media screen and (max-width: 1200px) {
+  .messages-scroll {
+    width: 80vw;
+  }
+}

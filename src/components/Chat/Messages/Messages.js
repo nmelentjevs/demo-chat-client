@@ -25,7 +25,11 @@ const Messages = ({ messages, currentUser }) => {
 
   return (
     <List>
-      <InfiniteScroll dataLength={messages.length} height="75vh">
+      <InfiniteScroll
+        dataLength={messages.length}
+        height="75vh"
+        className="messages-scroll"
+      >
         {!messages.length ? (
           <div className="system-message">
             <div className="messages">
