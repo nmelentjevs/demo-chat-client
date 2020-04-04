@@ -1,0 +1,15 @@
+@keyframes pingFound {
+  0% {
+    background: $main-bg-color;
+  }
+  50% {
+    background: $accent-color;
+  }
+  100% {
+    background: $main-bg-color;
+  }
+}
+
+.found {
+  animation: pingFound 0.5s 1;
+}

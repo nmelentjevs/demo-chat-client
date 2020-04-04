@@ -1,0 +1,58 @@
+.message {
+  &__group {
+    position: relative;
+  }
+
+  &__control {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    font-size: 0.875rem;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    border-radius: 1.25rem;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  }
+
+  &__control:focus {
+    outline: none;
+    box-shadow: inset 8px 8px 8px #c5c5c5, inset -8px -8px 8px #ffffff;
+  }
+
+  &__control:focus::placeholder {
+    color: #666;
+    letter-spacing: 0.15em;
+  }
+
+  &__control::placeholder {
+    color: #888;
+  }
+}
+
+.messages {
+  width: auto;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  background-color: #ecf0f3;
+  box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff;
+}
+@mixin message {
+  display: flex;
+  margin: 2rem;
+}
+
+.my-message {
+  @include message;
+  justify-content: flex-end;
+}
+
+.received-message {
+  @include message;
+  justify-content: flex-start;
+}
+
+.system-message {
+  @include message;
+  justify-content: center;
+}
