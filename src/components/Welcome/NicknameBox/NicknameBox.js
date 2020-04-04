@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { joinChat } from '../../../context/sockets/emit';
 import SocketContext from '../../../context/sockets/SocketContext';
 import backend from '../../../api/backend';
-import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import './nickname-box.scss';
 
 const NicknameBox = () => {
@@ -53,7 +53,7 @@ const NicknameBox = () => {
       <div className="container">
         <div className="icon">
           <div className="icon__circle">
-            <VpnKeyIcon className="icon__icon" />
+            <FavoriteBorderIcon className="icon__icon" fontSize="large" />
           </div>
         </div>
         <div className="join">
